@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 if (process.env.NODE_ENV === "development") {
-  app.use(morgan("both"));
+  app.use(morgan("dev"));
 }
 
 const transactionsRouter = require("./routes/transactions");
